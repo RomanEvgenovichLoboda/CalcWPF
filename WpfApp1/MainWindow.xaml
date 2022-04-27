@@ -12,7 +12,25 @@
             <RowDefinition Height="28*"></RowDefinition>
             <RowDefinition Height="156*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="2">
+        <Border BorderThickness="2" BorderBrush="Black">
+            <TextBlock  FontSize="40" Margin="5" HorizontalAlignment="Right">0</TextBlock>
+        </Border>
+        <Grid Grid.Row="1" ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Button Grid.Column="0" FontSize="20" Margin="2" Background="AliceBlue">MC</Button>
+            <Button Grid.Column="1" FontSize="20" Margin="2" Background="AliceBlue">MR</Button>
+            <Button Grid.Column="2" FontSize="20" Margin="2" Background="AliceBlue">M+</Button>
+            <Button Grid.Column="3" FontSize="20" Margin="2" Background="AliceBlue">MS</Button>
+            <Button Grid.Column="4" FontSize="20" Margin="2" Background="AliceBlue">M*</Button>
+        </Grid>
+        <Grid Grid.Row="2" ShowGridLines="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -28,7 +46,14 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" FontSize="24" Margin="2" Background="AliceBlue">%</Button>
+            <Button Grid.Column="1" Grid.Row="0" FontSize="24" Margin="2" Background="AliceBlue">CE</Button>
+            <Button Grid.Column="2" Grid.Row="0" FontSize="24" Margin="2" Background="AliceBlue">C</Button>
+            <Button Grid.Column="3" Grid.Row="0" FontSize="24" Margin="2" Background="AliceBlue">⌫</Button>
+            <Button Grid.Column="0" Grid.Row="1" FontSize="24" Margin="2" Background="White">⅟x</Button>
+            <Button Grid.Column="1" Grid.Row="1" FontSize="24" Margin="2" Background="White"></Button>
+            
         </Grid>
-        <!--<TextBox Grid.Row="0"></TextBox>-->
+        
     </Grid>
 </Window>
